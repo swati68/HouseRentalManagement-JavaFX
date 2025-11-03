@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="regPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="649.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Rental.RegisterController">
+   <children>
+      <BorderPane layoutX="12.0" layoutY="14.0" prefHeight="141.0" prefWidth="878.0">
+         <center>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="119.0" prefWidth="855.0" text="HOUSE RENTING SYSTEM" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Bookman Old Style Bold Italic" size="37.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+      <Separator layoutX="348.0" layoutY="183.0" prefWidth="202.0" />
+      <Label alignment="CENTER" layoutX="243.0" layoutY="147.0" prefHeight="17.0" prefWidth="413.0" text="REGISTER">
+         <font>
+            <Font name="Bookman Old Style Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf1" layoutX="243.0" layoutY="196.0" promptText="Name">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </TextField>
+      <DatePicker fx:id="dob" layoutX="463.0" layoutY="199.0" promptText="Date-Of-Birth" />
+      <TextField fx:id="tf2" layoutX="243.0" layoutY="246.0" promptText="E-mail">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tf3" layoutX="463.0" layoutY="246.0" promptText="Phone No.">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="243.0" layoutY="290.0" prefHeight="17.0" prefWidth="97.0" text="Address:">
+         <font>
+            <Font name="Arial Italic" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf4" layoutX="242.0" layoutY="319.0" promptText="House No.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tf5" layoutX="462.0" layoutY="319.0" promptText="Locality">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tf6" layoutX="242.0" layoutY="356.0" promptText="Street">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tf7" layoutX="462.0" layoutY="356.0" promptText="City">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tf8" layoutX="242.0" layoutY="391.0" promptText="State">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tf9" layoutX="462.0" layoutY="391.0" promptText="Pin Code">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="242.0" layoutY="427.0" prefHeight="17.0" prefWidth="159.0" text="Aadhaar Number:">
+         <font>
+            <Font name="Arial Italic" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf10" layoutX="242.0" layoutY="450.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btn1" layoutX="414.0" layoutY="565.0" mnemonicParsing="false" onAction="#OnRegister" text="Register">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="462.0" layoutY="427.0" prefHeight="18.0" prefWidth="174.0" text="Pan Card Number:">
+         <font>
+            <Font name="Arial Italic" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf11" layoutX="462.0" layoutY="450.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="242.0" layoutY="488.0" prefHeight="18.0" prefWidth="159.0" text="Password:">
+         <font>
+            <Font name="Arial Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="462.0" layoutY="488.0" prefHeight="18.0" prefWidth="159.0" text="Re-enter Password:">
+         <font>
+            <Font name="Arial Italic" size="16.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="tf12" layoutX="242.0" layoutY="510.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="tf13" layoutX="462.0" layoutY="510.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <Label fx:id="lb1" layoutX="649.0" layoutY="515.0" prefHeight="18.0" prefWidth="220.0" textFill="#d21c1c">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn2" layoutX="420.0" layoutY="605.0" mnemonicParsing="false" onAction="#LoginAgain" text="Login">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="viewPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Rental.ViewController">
+   <children>
+      <BorderPane layoutX="11.0" layoutY="14.0" prefHeight="118.0" prefWidth="878.0">
+         <center>
+            <Label alignment="CENTER" prefHeight="103.0" prefWidth="866.0" text="HOUSE RENTING SYSTEM" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Bookman Old Style Bold Italic" size="37.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+      <TableView fx:id="viewTable" layoutX="23.0" layoutY="132.0" prefHeight="378.0" prefWidth="854.0">
+        <columns>
+          <TableColumn fx:id="loc" prefWidth="111.20000648498535" text="Location" />
+          <TableColumn fx:id="dim" prefWidth="95.99996948242188" text="Dimension" />
+            <TableColumn fx:id="room" prefWidth="91.20001220703125" text="Rooms" />
+            <TableColumn fx:id="bath" prefWidth="103.99993896484375" text="Bathrooms" />
+            <TableColumn fx:id="desc" prefWidth="191.20004272460938" text="Description" />
+            <TableColumn fx:id="rent" prefWidth="96.79998779296875" text="Rent" />
+            <TableColumn fx:id="user_buy" prefWidth="158.4000244140625" text="Rented By" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn1" alignment="CENTER" contentDisplay="CENTER" layoutX="425.0" layoutY="558.0" mnemonicParsing="false" onAction="#back" text="Back">
+         <font>
+            <Font name="Bodoni MT" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="lbl1" alignment="CENTER" contentDisplay="CENTER" layoutX="253.0" layoutY="529.0" prefHeight="18.0" prefWidth="394.0" textFill="#f20707">
+         <font>
+            <Font name="Bodoni MT Italic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
